@@ -1,15 +1,13 @@
-﻿# Linux Utility Scripts (Python Based)
+﻿# Ready-Made Python Scripts
 
-This repository serves as a centralized collection of personal utility scripts, primarily written in Python (.py), designed to automate, streamline, and simplify various routine and specialized tasks on my Linux operating system.
+This repository contains **ready-to-use Python scripts** for common tasks, academic requirements, and automation. This repository contains many scripts are designed to work across different operating systems.
 
-These scripts are focused on improving workflow efficiency, system maintenance, development setup, and custom environment configurations using Python's extensive standard library and available third-party modules.
+Clone the repository and run any script byt typing these commands in the terminal:
 
-## Purpose and Goals
+```bash
+# Clone the repository.
+git clone https://github.com/elijah-alonzo/python-scripts.git
+cd python-scripts
 
-**The primary goal of this repository is to:**
-
-1. Automation: Eliminate repetitive manual tasks (e.g., specific backups, log rotations, complex compilation/deployment steps).
-2. Consistency: Ensure system configuration and maintenance procedures are performed identically every time.
-3. Efficiency: Provide quick, single-command solutions for multi-step processes.
-
-
+# Run the script.
+python script_name.py
