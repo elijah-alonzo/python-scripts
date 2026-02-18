@@ -18,7 +18,10 @@ class PasswordGeneratorGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Password Generator")
+        self.root.geometry("320x180")
         self.root.resizable(False, False)
+        self.root.columnconfigure(0, weight=1)
+        self.root.rowconfigure(0, weight=1)
 
         frame = ttk.Frame(self.root, padding=14)
         frame.grid(row=0, column=0, sticky="nsew")
@@ -29,7 +32,7 @@ class PasswordGeneratorGUI:
 
         self.symbols_var = tk.BooleanVar(value=True)
         ttk.Checkbutton(frame, text="Include symbols", variable=self.symbols_var).grid(
-            row=1, column=0, columnspan=2, sticky="w", pady=(0, 10)
+            row=1, column=0, columnspan=2, sticky="ew", pady=(0, 10)
         )
 
         ttk.Button(frame, text="Generate Password", command=self.on_generate).grid(
@@ -42,6 +45,7 @@ class PasswordGeneratorGUI:
             row=4, column=0, columnspan=2, sticky="ew", pady=(4, 0)
         )
 
+        frame.columnconfigure(0, weight=0)
         frame.columnconfigure(1, weight=1)
 
     def on_generate(self):
